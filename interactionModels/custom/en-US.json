@@ -1,0 +1,79 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "tummy bot",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "RestaurantRatingIntent",
+          "slots": [
+            {
+              "name": "restaurant",
+              "type": "AMAZON.FoodEstablishment"
+            }
+          ],
+          "samples": [
+            "Is {restaurant} okay",
+            "Is {restaurant} good enough ",
+            "What are the ratings of {restaurant}",
+            "How good is {restaurant}"
+          ]
+        },
+        {
+          "name": "TopRestaurantsIntent",
+          "slots": [
+            {
+              "name": "place",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "best places for dineout in {place}",
+            "What are the best restaurants in {place}",
+            "What are the best hotels in {place}",
+            "What are the best eateries in {place}"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "7"
+}

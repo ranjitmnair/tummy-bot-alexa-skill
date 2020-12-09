@@ -1,0 +1,74 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "tummy is an alexa skill which helps you find the best eateries of a certain city",
+          "examplePhrases": [
+            "Alexa open tummy bot",
+            "hello",
+            "help"
+          ],
+          "keywords": [
+            "hotels",
+            "restaurants",
+            "best-restaurants",
+            "eateries",
+            "top-restaurants",
+            "food",
+            "zomato-restaurants"
+          ],
+          "name": "tummy",
+          "description": "tummy is an alexa skill which helps you find the best eateries of a certain city. \nAsk phrases like:\n-What are the top eateries in Kolkata?\n-best hotels in Mumbai\nThis is achieved with the use of Zomato API. Features would be added in the new addition",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [],
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "The skill uses Zomato API which is free-to-use. The API does need an API key No other specific permissions required.",
+      "category": "HOTEL_FINDERS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:208308943158:function:2404f4e8-2abc-4d37-8fe4-c8fdeca8a496:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:208308943158:function:2404f4e8-2abc-4d37-8fe4-c8fdeca8a496:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:208308943158:function:2404f4e8-2abc-4d37-8fe4-c8fdeca8a496:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:208308943158:function:2404f4e8-2abc-4d37-8fe4-c8fdeca8a496:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
